@@ -22,7 +22,7 @@ def reverseGoogle(lat,lng):
     url = 'https://maps.googleapis.com/maps/api/geocode/json'
 
     # Your API key (optional, but recommended)
-    api_key = 'AIzaSyC1RPB_a-Yrn_vrJIbziuLLDFyAc4nE-7c'
+    api_key = ''
 
     # Parameters for the API request
     params = {
