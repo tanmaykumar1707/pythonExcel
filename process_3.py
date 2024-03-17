@@ -132,8 +132,6 @@ def checkingPincodeInTexts():
             if len(list_pincode)>0:
                 df.at[index,'CHECK_SUM']=str(int(row['Postal Code']))==str(list_pincode[0])
             
-            
-            
             if len(list_pincode)>1:
                 df.at[index,'CHECK_SUM']='PIN_ISSUE'
                 if(  pd.isna(row['Postal Code'])):
@@ -144,9 +142,6 @@ def checkingPincodeInTexts():
                 # if str(list_pincode_space[0]).replace(' ','') ==str(row['Postal Code']) :
                 df.at[index,'CHECK_SUM']=str(int(row['Postal Code']))==str(str(list_pincode_space[0]).replace(' ',''))
 
-            
-
-            
             if len(list_pincode)>0:
                 df.at[index,'CHECK_SUM']=str(int(row['Postal Code']))==str(list_pincode[0])
               
